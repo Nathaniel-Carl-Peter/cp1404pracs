@@ -30,12 +30,13 @@ def main():
             score = get_valid_score()
             determined_score(score)  # Function to determined score
         elif choice == 'S':
-            print("Goodbye")
+            score = get_valid_numbers()
+            print_number_of_asterisk(score)
         else:
             print("Invalid choice :P")
         print(MENU)
         choice = input(">>> ").upper()
-    print("Farewell friend. ;)")
+    print("Farewell. ;D")
 
 
 def get_valid_score():
@@ -54,6 +55,17 @@ def determined_score(score):
         print("Passable")
     else:
         print("Bad")
+
+
+def get_valid_numbers():
+    score = int(input(">>> "))
+    return score
+
+
+def print_number_of_asterisk(number_of_stars):
+    for i in range(number_of_stars):
+        print('*', end="")
+    print()
 
 
 main()
