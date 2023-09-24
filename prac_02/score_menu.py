@@ -5,6 +5,17 @@ Pseudo:
 
 display menu
 get user input
+while choice != Q:
+    if choice == Valid scores
+        get score input
+        determined score
+    else if choice == Stars:
+        display *
+    else:
+        display Invalid choice
+    display menu
+    get input
+farewell
 
 """
 
@@ -17,9 +28,9 @@ def main():
     while choice != 'Q':
         if choice == 'V':
             score = get_valid_score()
-            determined_score(score)
+            determined_score(score)  # Function to determined score
         elif choice == 'S':
-
+            print("Goodbye")
         else:
             print("Invalid choice :P")
         print(MENU)
