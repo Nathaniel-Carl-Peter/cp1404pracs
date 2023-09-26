@@ -7,6 +7,14 @@ Password Stars
 MINIMUM_LENGTH = 4
 
 
+def original():
+    """Get a password of valid size and print asterisks."""
+    password = input(f"Enter password of at least 6 characters: ")
+    while len(password) < 4:
+        password = input(f"Enter password of at least 6 characters: ")
+    print('*' * len(password))
+
+
 def version_1():
     """Get a password of valid size and print asterisks."""
     password = input(f"Enter password of at least {MINIMUM_LENGTH} characters: ")
@@ -33,4 +41,5 @@ def print_asterisk(sequence):
 
 
 # version_1()
-main()
+# main()
+original()
