@@ -13,3 +13,4 @@ print(random.randrange(3, 10, 2))  # line 2
 print(random.uniform(2.5, 5.5))  # line 3
 # line 3 print random decimal numbers in range from 2.5 to 4.5
 # given the fact in python we count from 0.
+
