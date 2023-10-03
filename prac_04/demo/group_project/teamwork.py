@@ -11,12 +11,12 @@ def get_numbers():
 
 
 def square_numbers(number):
-    print("testing")
+    print("testing hello there")
 
 
 def display_number(numbers):
     """Display numbers"""
-    print("test")
+    print("test hello there")
 
 
 main()
