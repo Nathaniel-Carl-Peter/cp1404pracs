@@ -41,5 +41,5 @@ def print_asterisk(sequence):
 
 
 # version_1()
-# main()
-original()
+main()
+# original()
