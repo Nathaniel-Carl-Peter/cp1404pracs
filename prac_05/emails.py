@@ -9,7 +9,8 @@ def main():
             name = input("Name: ")
         email_to_names[email] = name
         email = input(f"Email: ")
-    for email, name in email_to_names:
+
+    for email, name in email_to_names.items():
         print(f"{name} ({email})")
 
 
