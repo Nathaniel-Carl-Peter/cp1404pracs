@@ -1,7 +1,7 @@
 """
 CP1404 - Prac 06 -Guitars
 """
-CURRENT_YEAR = 2017
+CURRENT_YEAR = 2013
 VINTAGE_AGE = 50
 
 
@@ -16,7 +16,7 @@ class Guitar:
 
     def __str__(self):
         """Display results which represent Car object"""
-        return f"{self.name}, fuel={self.year}, odometer={self.cost:.2f}"
+        return f"{self.name}, {self.year}, ${self.cost:.2f}"
 
     def get_age(self):
         """Get the age of guitar based on 2017"""
