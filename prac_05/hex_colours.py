@@ -8,7 +8,7 @@ COLOUR_CODES = {"Absolute Zero": "#0048ba",
                 "Aquamarine1": "#7fffd4",
                 "Azure1": "#f0ffff",
                 "Blue Violet": "#8a2be2"}
-colour_name = input("Enter colour name: ")
+colour_name = input("Enter colour name: ").title()
 while colour_name != "":
     print(f" The code for {colour_name} is {COLOUR_CODES.get(colour_name)}")
     colour_name = input("Enter colour name: ")
