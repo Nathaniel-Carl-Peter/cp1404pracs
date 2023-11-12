@@ -18,7 +18,7 @@ class SquareNumberApp(App):
         self.root = Builder.load_file('squaring.kv')
         return self.root
 
-    def handle_calculation(self, value):
+    def handle_calculate(self, value):
         """Handle calculations"""
         try:
             results = int(value) ** 2
