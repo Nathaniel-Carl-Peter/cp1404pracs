@@ -20,8 +20,15 @@ class MilesConverterApp(App):
         miles = self.convert_to_number(text)
         self.root.ids.input_miles.text = str(miles)
 
-    def handle_increments(self, miles):
+    def handle_increments(self, text, change):
         print('Update')
+        print("handle increment")
+        miles = self.convert_to_number(text) + change
+        self.root.ids.input_miles.text = str(miles)
+        # Since the InputText.text has changed, its on_text event will fire and handle_calculate will be called
+
+    def update_result(self, miles):
+        print("update")
         self.output_km = str(miles * FACTOR_MILES_TO_KM)
 
     @staticmethod
