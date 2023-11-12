@@ -1,0 +1,17 @@
+BoxLayout:
+    orientation: 'vertical'
+#    orientation: 'horizontal'
+    TextInput:
+        id: input_number
+        text: '7'
+        font_size: '48'
+        multiline: False
+    Button:
+        text: 'Square'
+        #  Specifies function of app to call a button pressed
+        on_press: app.handle_calculate(input_number.txt)
+
+    Label:
+        id: output_label
+        font_size: '48'
+        color: (1, 0, 1, 1)
