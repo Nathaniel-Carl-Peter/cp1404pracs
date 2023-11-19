@@ -37,3 +37,4 @@ class MilesConverterApp(App):
             return float(text)
         except ValueError:
             return 0.0
+# Missing run function to run the app.
